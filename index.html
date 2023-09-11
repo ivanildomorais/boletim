@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo para as células */
+        .cell {
+            width: 200px; /* Largura da célula */
+            height: 150px; /* Altura da célula */
+            margin: 20px; /* Espaçamento de 2 centímetros */
+            display: inline-block; /* Para colocar as células em linha */
+            text-align: center; /* Centraliza o conteúdo na célula */
+        }
+
+        /* Cores diferentes para as células na primeira linha */
+        .row1 .cell:nth-child(1) { background-color: rgb(241, 192, 28); }
+        .row1 .cell:nth-child(2) { background-color: rgb(240, 93, 73); }
+        .row1 .cell:nth-child(3) { background-color: green; }
+
+        /* Cores diferentes para as células na segunda linha */
+        .row2 .cell:nth-child(1) { background-color: rgba(40, 95, 43, 0.336); }
+        .row2 .cell:nth-child(2) { background-color: rgba(6, 62, 114, 0.726); }
+        .row2 .cell:nth-child(3) { background-color: rgba(112, 80, 11, 0.568); }
+
+        /* Estilo para o título */
+        .title {
+            font-family: "Arial", sans-serif; /* Define a fonte para Arial Black */
+            font-size: 18px; /* Tamanho da fonte do título */
+            margin-bottom: 80px; /* Espaçamento inferior */
+            text-align: center; /* Centraliza o conteúdo horizontalmente */
+        }
+
+        /* Estilo para o subtítulo */
+        .subtitle {
+            font-size: 24px; /* Tamanho maior para o subtítulo */
+            text-align: center; /* Centraliza o conteúdo horizontalmente */
+        }
+
+        /* Estilo para as linhas */
+        .row {
+            text-align: center; /* Centraliza o conteúdo horizontalmente */
+        }
+        
+        /* Estilo para a tabela */
+        table {
+            margin: 0 auto; /* Centraliza a tabela na página */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <h1 class="title">Atualizado em:</h1>
+                <h2 class="subtitle">quinta-feira, 7 de janeiro de 2021</h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="row row1">
+                    <div class="cell" id="cell1">
+                        <div class="title">Suspeitos</div>
+                        <div class="subtitle">160</div>
+                    </div>
+                    <div class="cell" id="cell2">
+                        <div class="title">Confirmados</div>
+                        <div class="subtitle">33</div>
+                    </div>
+                    <div class="cell" id="cell3">
+                        <div class="title">Descartados</div>
+                        <div class="subtitle">56</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="row row2">
+                    <div class="cell" id="cell4">
+                        <div class="title">Monitorados</div>
+                        <div class="subtitle">6</div>
+                    </div>
+                    <div class="cell" id="cell5">
+                        <div class="title">Curados</div>
+                        <div class="subtitle">32</div>
+                    </div>
+                    <div class="cell" id="cell6">
+                        <div class="title">Óbitos</div>
+                        <div class="subtitle">1</div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
